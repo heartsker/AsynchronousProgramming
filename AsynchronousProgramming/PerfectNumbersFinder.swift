@@ -15,7 +15,7 @@ class PerfectNumbersFinder: Executable {
 	var description: String = ""
 
 	func execute() {
-		let range = 2 ... 1_000_000
+		let range = 2 ... 1_000_00
 		var count = 0
 		var largest: Int? = nil
 

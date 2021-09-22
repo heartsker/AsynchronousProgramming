@@ -13,14 +13,14 @@ final class AsyncEngine {
 
 	private let queue: OperationQueue = {
 		let queue = OperationQueue()
-		queue.maxConcurrentOperationCount = 1
+		queue.maxConcurrentOperationCount = 2
 		queue.qualityOfService = .background
 		return queue
 	}()
 
 	private var lastOperation: Operation?
 
-	func add(task: Executable) {
+	func add(task: Executable, complition: @escaping () -> () = {}) {
 		let operation = BlockOperation()
 
 		var start: DispatchTime = DispatchTime.init(uptimeNanoseconds: 0)
@@ -36,6 +36,8 @@ final class AsyncEngine {
 				finish = DispatchTime.now()
 				print("\(task.name) took \(Int(Double(finish.uptimeNanoseconds - start.uptimeNanoseconds) / 1e6)) ms to execute")
 				print(task.description)
+
+				complition()
 			}
 		}
 
