@@ -14,7 +14,7 @@ Protocol for all tasks which can be run by [AsyncEngine](https://github.com/hear
 - [PerfectNumbersFinder](https://github.com/heartsker/AsynchronousProgramming/blob/master/AsynchronousProgramming/PerfectNumbersFinder.swift) - find [perfect numbers](https://en.wikipedia.org/wiki/Perfect_number) in given range.
 - [PrimeNumbersFinder](https://github.com/heartsker/AsynchronousProgramming/blob/master/AsynchronousProgramming/PrimeNumbersFinder.swift) - find all the [primes](https://en.wikipedia.org/wiki/Prime_number) in given range.
 - This tasks' ```execute()``` function is not written using the most optimal algorithms. That is done to demonstrate long run-time _(more than 3 sec)_ processes.
-
+  
 ## [UI](https://github.com/heartsker/AsynchronousProgramming/blob/master/AsynchronousProgramming/ContentView.swift)
 UI impmlemented with SwiftUI.
 - Home screen (```ContentView.swift```) have buttons run add sample tasks to the ```AsyncEngine```.
