@@ -8,5 +8,7 @@
 import Foundation
 
 protocol Executable {
+	var name: String { get }
+	var description: String { get }
 	func execute()
 }
