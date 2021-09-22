@@ -17,4 +17,8 @@ Protocol for all tasks which can be run by [AsyncEngine](https://github.com/hear
 ## [UI](https://github.com/heartsker/AsynchronousProgramming/blob/master/AsynchronousProgramming/ContentView.swift)
 UI impmlemented with SwiftUI.
 - Home screen (```ContentView.swift```) have buttons run add sample tasks to the ```AsyncEngine```.
+- Buttons change their color every time corresponding task finishes execution.
 - At the top of the screen there is a label. It refreshes every __0.1__ sec and contains string of 10 random characters.
+  <img src="https://user-images.githubusercontent.com/51203539/134362410-a71bebc1-f471-4572-aa9f-5e16abd49366.gif" height="400">
+- Log screen in console looks like the following
+  <img src="https://user-images.githubusercontent.com/51203539/134364085-e98bf584-c0f2-4d53-bc99-4be1bef59d13.gif" height="400">
